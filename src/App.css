@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.logo {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img {
+  width: 18vw;
+  left: 0;
+  margin: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner {
+  background: url("https://tse2.mm.bing.net/th?id=OIP.Mt9bHTmkaqGiL0OP6AXm_AHaE8&pid=Api&P=0")
+    no-repeat;
+  background-size: cover;
+  height: 75vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h1 {
+  font-size: 80px;
+  font-weight: 700;
   color: white;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.banner p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding-top: 10vh;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.subHeading {
+  padding: 50px;
+}
+
+.subhead {
+  letter-spacing: 5px;
+  font-size: 18px;
+  color: grey;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 20rem;
+}
+
+.contact {
+  background: url("https://cdn.pixabay.com/photo/2018/12/10/10/21/earth-3866609__340.jpg")
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 40px;
+}
+
+.contactLine {
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 50px 0px;
+}
+
+.buttons {
+  margin-top: 10%;
+}
+.buttons button a {
+  color: white;
+  text-decoration: none;
+}
+.buttons button a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 968px) {
+  .banner h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 30rem;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding-top: 10vh;
+    width: 80%;
   }
 }
